@@ -1,0 +1,287 @@
+//============================================================================
+// Name        : CannyEdgeDetector.cpp
+// Author      : Hannah Ervin
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <TooN/TooN.h>
+#include <cvd/image_io.h>
+#include <cvd/convolution.h>
+#include <cvd/image.h>
+#include <cvd/videodisplay.h>
+#include <cvd/gl_helpers.h>
+#include <cvd/image_convert.h>
+#include <cmath>
+#include <iostream>
+#include <vector>
+
+
+using namespace std;
+using namespace CVD;
+using namespace TooN;
+
+void display_image(Image <byte>& im){
+	VideoDisplay window(im.size());
+	glDrawPixels(im);
+	glFlush();
+}
+
+
+void gradient(const Image<float>& in, Image<float>& dx_out, Image<float>& dy_out){
+	ImageRef size = in.size();
+	ImageRef scan (0,0);
+	ImageRef dx(1,0);
+	ImageRef dy(0,1);
+
+	do{
+		dx_out[scan]=in[scan+dx]-in[scan-dx];
+		dy_out[scan]=in[scan+dy]-in[scan-dy];
+	}while(scan.next(size));
+}
+
+void gradient_magnitude(const Image<float>& dx_in, const Image<float>& dy_in, Image<float>& magnitude_out){
+	ImageRef size = dx_in.size();
+	ImageRef scan (0,0);
+	do{
+		float dx = dx_in[scan];
+		float dy = dy_in[scan];
+		magnitude_out[scan] = dx*dx+dy*dy;
+	}while(scan.next(size));
+}
+
+void nonmax(const Image<float>& dx_in, const Image<float>& dy_in, const Image<float>& magnitude_in, vector<ImageRef>& edgels, float threshold){
+	ImageRef border(1,1);
+
+	ImageRef scan=border;
+
+	ImageRef size = dx_in.size();
+
+	do{
+		float mag = magnitude_in[scan];
+		if(mag < threshold) continue;
+
+		// first find the direction
+		ImageRef direction;
+		float dx = dx_in[scan];
+		float dy = dy_in[scan];
+		if(dx<0){
+				dx*=-1;
+				dy*=-1;
+		}
+
+		if(0.4142*dy > dx) {
+			direction = ImageRef(1,0);
+		} else if (dy > 0.4142*dx){
+			direction = ImageRef(1,1);
+		} else if (dy > -0.4142*dx) {
+			direction = ImageRef(1,0);
+		} else if (0.4142*dy > -dx) {
+			direction = ImageRef(1,-1);
+		} else {
+			direction = ImageRef(1,0);
+		}
+
+		if(mag > magnitude_in[scan+direction] && mag > magnitude_in[scan-direction]){
+			edgels.push_back(scan);
+		}
+
+	}while(scan.next(border,size-border));
+
+}
+
+void draw_edgels(const vector<ImageRef>& edgels, Image<byte> out){
+	for(int i =0; i< edgels.size(); i++){
+		out[edgels[i]] = 255;
+	}
+}
+
+//get_colour_profile(vector<ImageRef>& edgels_in, vector<ImageRef>& dir_in, Image<Rgb<byte> > in, vector<Rgb[21]> profile_out)
+
+
+/*void sobel_filter(Image<byte>& in, Image<byte>& sobel, float scale, float *gradorientation, int gradwidth)
+{
+	ImageRef size = in.size();
+	ImageRef border(1,1);
+	ImageRef dx(1,0);
+	ImageRef dy(0,1);
+	ImageRef scan=border;
+	do{
+		double diffx = in[scan+dx]-in[scan-dx];
+		double diffy = in[scan+dy]-in[scan-dy];
+		sobel[scan] = scale*sqrt(diffx*diffx + diffy*diffy); //gradient magnitude
+		if(diffx!=0){
+			gradorientation[scan.x * gradwidth+scan.y] = atan(diffy/diffx);
+			if(gradorientation[scan.x * gradwidth+scan.y]!=0){
+				gradorientation[scan.x * gradwidth+scan.y] = gradorientation[scan.x * gradwidth+scan.y]*180.0/M_PI;
+			}
+		}
+		else{
+			gradorientation[scan.x * gradwidth+scan.y] = atan(diffy);
+			if(gradorientation[scan.x * gradwidth+scan.y]!=0){
+				gradorientation[scan.x * gradwidth+scan.y] = gradorientation[scan.x * gradwidth+scan.y]*180.0/M_PI;
+			}
+		}
+		if(gradorientation[scan.x * gradwidth+scan.y]<-67.5){
+			gradorientation[scan.x * gradwidth+scan.y] = 90;
+		}
+		else if (gradorientation[scan.x * gradwidth+scan.y] < -22.5){
+			gradorientation[scan.x * gradwidth+scan.y] = 135;
+		}
+		else if(gradorientation[scan.x * gradwidth+scan.y]< 22.5){
+			gradorientation[scan.x * gradwidth+scan.y] = 0;
+		}
+		else if(gradorientation[scan.x * gradwidth+scan.y]< 67.5){
+			gradorientation[scan.x * gradwidth+scan.y] = 45;
+		}
+		else{
+			gradorientation[scan.x * gradwidth+scan.y] = 90;
+		}
+		//cout<<gradorientation[scan.x * gradwidth+scan.y]<<endl;
+	}
+	while(scan.next(border, size-border));
+}
+
+void non_maxima_suppression(Image<byte>& sobel, float* gradorientation, int gradwidth, Image<byte>& out){
+	ImageRef it(2,2);
+	ImageRef size = sobel.size();
+	ImageRef start(2,2);
+	ImageRef east(1,0);
+	ImageRef west(-1,0);
+	ImageRef north(0,-1);
+	ImageRef south(0,1);
+	ImageRef southeast(1,1);
+	ImageRef southwest(-1,1);
+	ImageRef northeast(1,-1);
+	ImageRef northwest(-1,-1);
+
+	do{
+		switch ((int)gradorientation[it.x * (gradwidth+it.y)]){
+		case 0:{
+			out[it] = (sobel[it]>sobel[it+east])&&(sobel[it]>=sobel[it+west])?255:0;
+		}
+		case 45:{
+			out[it] = (sobel[it]>sobel[it+northeast])&&(sobel[it]>=sobel[it+southwest])?255:0;
+		}
+		case 90:{
+			out[it] = (sobel[it]>sobel[it+north])&&(sobel[it]>=sobel[it+south])?255:0;
+		}
+		case 135:{
+			out[it] = (sobel[it]>sobel[it+northwest])&&(sobel[it]>=sobel[it+southeast])?255:0;
+		}
+		default:{
+
+		}
+		}
+	}while(it.next(start, size-start));
+}*/
+
+int main()
+{
+	try{
+		cout << "Hello World!" <<endl;
+		//LOAD IMAGE
+		string img_name("frog");
+		Image<Rgb<byte> > im;
+		im = img_load(img_name+".jpg");
+		ImageRef size = im.size();
+
+		//BLUR
+		Image<float> blurred(size);
+		Image<float> gray(size);
+
+		convert_image(im,gray);
+
+		convolveGaussian(gray, blurred, 5, 1.0);
+		img_save(blurred, img_name+"gblur.jpg");
+
+		Image<float> dx(size);
+		Image<float> dy(size);
+		gradient(blurred,dx,dy);
+
+		Image<float> magnitude(size);
+		gradient_magnitude(dx,dy,magnitude);
+		float threshold = 0.001;
+		vector<ImageRef> edgels;
+		nonmax(dx,dy,magnitude,edgels, threshold);
+		Image<byte> output(size);
+		draw_edgels(edgels, output);
+		img_save(output, img_name+"out.jpg");
+
+
+
+#if 0
+
+		//CREATE RED, GREEN and BLUE IMAGES
+		Image<byte> red(size);
+		Image<byte> green(size);
+		Image<byte> blue(size);
+		ImageRef it(1,1);
+		ImageRef start(1,1);
+		do{
+			red[it] = blurred[it].red;
+			green[it] = blurred[it].green;
+			blue[it] = blurred[it].blue;
+		}while(it.next(start, size-start));
+		img_save(red, img_name+"red.jpg");
+		img_save(green, img_name+"green.jpg");
+		img_save(blue, img_name+"blue.jpg");
+
+
+
+		//SOBEL FILTER
+		Image<byte> redsobel(size);
+		Image<byte> greensobel(size);
+		Image<byte> bluesobel(size);
+		float* gradorientation;
+		int x = size.x;
+		int y = size.y;
+		gradorientation = new float[x*y];
+		sobel_filter(red,redsobel, 5.0, gradorientation,x);
+		sobel_filter(green,greensobel, 5.0, gradorientation,x);
+		sobel_filter(blue,bluesobel, 5.0, gradorientation,x);
+		img_save(redsobel, img_name+"greensobel.jpg");
+		img_save(greensobel, img_name+"redsobel.jpg");
+		img_save(bluesobel, img_name+"bluesobel.jpg");
+
+		//COMBINE COLOUR CHANNELS
+		Image<byte> combinedsobel(size);
+		it.x = 1;
+		it.y = 1;
+		do{
+			combinedsobel[it] = redsobel[it]+greensobel[it]+bluesobel[it];
+		}while(it.next(start, size-start));
+		img_save(combinedsobel, img_name+"combinedsobel.jpg");
+
+		//NON MAXIMA SUPPRESSION
+		Image<byte> combinedout(size);
+		Image<byte> redout(size);
+		Image<byte> greenout(size);
+		Image<byte> blueout(size);
+		non_maxima_suppression(combinedsobel,gradorientation, x, combinedout);
+		non_maxima_suppression(redsobel,gradorientation, x, redout);
+		non_maxima_suppression(greensobel,gradorientation, x, greenout);
+		non_maxima_suppression(bluesobel, gradorientation, x, blueout);
+		img_save(combinedout, img_name+"combinedout.jpg");
+		img_save(redout, img_name+"redout.jpg");
+		img_save(greenout, img_name+"greenout.jpg");
+		img_save(blueout, img_name+"blueout.jpg");
+
+		//DISPLAY RESULTS
+		//display_image(im);
+		//display_image(blurred);
+		//display_image(sobel);
+		cout<<"THE END"<<endl;
+#endif
+
+	}
+	catch(Exceptions::All error){
+	    std::cerr << "Error: " << error.what << std::endl;
+	}
+
+
+
+	return 0;
+
+}
