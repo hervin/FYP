@@ -3,7 +3,7 @@
 // Author      : Hannah Ervin
 // Version     :
 // Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
+// Description : Final Year Project - edge detection and classification
 //============================================================================
 
 #include <TooN/TooN.h>
@@ -51,11 +51,9 @@ void gradient_magnitude(const Image<float>& dx_in, const Image<float>& dy_in, Im
 	}while(scan.next(size));
 }
 
-void nonmax(const Image<float>& dx_in, const Image<float>& dy_in, const Image<float>& magnitude_in, vector<ImageRef>& edgels, float threshold){
+void nonmax(const Image<float>& dx_in, const Image<float>& dy_in, const Image<float>& magnitude_in, vector<ImageRef>& edgels, vector<ImageRef>& directions, float threshold){
 	ImageRef border(1,1);
-
 	ImageRef scan=border;
-
 	ImageRef size = dx_in.size();
 
 	do{
@@ -67,10 +65,10 @@ void nonmax(const Image<float>& dx_in, const Image<float>& dy_in, const Image<fl
 		float dx = dx_in[scan];
 		float dy = dy_in[scan];
 		if(dx<0){
-				dx*=-1;
-				dy*=-1;
+			// simplify direction classification by reducing the space to a half plane
+			dx*=-1;
+			dy*=-1;
 		}
-
 		if(0.4142*dy > dx) {
 			direction = ImageRef(1,0);
 		} else if (dy > 0.4142*dx){
@@ -82,9 +80,9 @@ void nonmax(const Image<float>& dx_in, const Image<float>& dy_in, const Image<fl
 		} else {
 			direction = ImageRef(1,0);
 		}
-
 		if(mag > magnitude_in[scan+direction] && mag > magnitude_in[scan-direction]){
 			edgels.push_back(scan);
+			directions.push_back(direction);
 		}
 
 	}while(scan.next(border,size-border));
@@ -92,18 +90,26 @@ void nonmax(const Image<float>& dx_in, const Image<float>& dy_in, const Image<fl
 }
 
 void draw_edgels(const vector<ImageRef>& edgels, Image<byte> out){
-	for(int i =0; i< edgels.size(); i++){
+	for(int i = 0; i < edgels.size(); i++){
 		out[edgels[i]] = 255;
 	}
 }
 
-//get_colour_profile(vector<ImageRef>& edgels_in, vector<ImageRef>& dir_in, Image<Rgb<byte> > in, vector<Rgb[21]> profile_out)
+void get_colour_profile(const vector<ImageRef>& edgels_in, const vector<ImageRef>& dir_in, const Image<Rgb<byte> > in, vector<vector<Rgb<byte> > > profile_out, int profile_length){
+	for(int i = 0; i < edgels_in.size(); i++){
+			vector<Rgb<byte> > temp;
+			temp.resize(profile_length);
+			for( int j = -((profile_length-1))/2; j <= ((profile_length-1)/2); j++){
+				temp.push_back(in[edgels_in[i]+j*dir_in[i]]);
+			}
+			profile_out.push_back(temp);
+		}
+}
 
 
 int main()
 {
 	try{
-		cout << "Hello World!" <<endl;
 		//LOAD IMAGE
 		string img_name("flower");
 		Image<Rgb<byte> > im;
@@ -117,16 +123,26 @@ int main()
 		convolveGaussian(gray, blurred, 5, 1.0);
 		img_save(blurred, img_name+"gblur.jpg");
 
+		//COMPUTE IMAGE GRADIENTS
 		Image<float> dx(size);
 		Image<float> dy(size);
 		gradient(blurred,dx,dy);
 
+		//COMPUTE GRADIENT MAGNITUDES
 		Image<float> magnitude(size);
 		gradient_magnitude(dx,dy,magnitude);
+
+		//NON MAXIMA SUPPRESSION AND THRESHOLDING
 		float threshold = 0.0002;
 		vector<ImageRef> edgels;
-		nonmax(dx,dy,magnitude,edgels, threshold);
+		vector<ImageRef> directions;
+		nonmax(dx, dy, magnitude, edgels, directions, threshold);
 
+		//GET COLOUR PROFILES
+		vector<vector<Rgb<byte> > > colour_profiles;
+		get_colour_profile(edgels,directions,in, colour_profiles, 21);
+
+		//DRAW IMAGE OF EDGES
 		Image<byte> output(size);
 		draw_edgels(edgels, output);
 		img_save(output, img_name+"out.jpg");

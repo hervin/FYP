@@ -6,7 +6,9 @@ Building file: ../src/FYP.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FYP.d" -MT"src/FYP.d" -o"src/FYP.o" "../src/FYP.cpp"
 ../src/FYP.cpp: In function ‘void draw_edgels(const std::vector<CVD::ImageRef>&, CVD::Image<unsigned char>)’:
-../src/FYP.cpp:95:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/FYP.cpp:93:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/FYP.cpp: In function ‘void get_colour_profile(const std::vector<CVD::ImageRef>&, const std::vector<CVD::ImageRef>&, CVD::Image<CVD::Rgb<unsigned char> >, std::vector<std::vector<CVD::Rgb<unsigned char> > >, int)’:
+../src/FYP.cpp:99:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 Finished building: ../src/FYP.cpp
  
 Building target: FYP
