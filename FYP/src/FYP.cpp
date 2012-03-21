@@ -70,7 +70,7 @@ void nonmax(const Image<float>& dx_in, const Image<float>& dy_in, const Image<fl
 			dy*=-1;
 		}
 		if(0.4142*dy > dx) {
-			direction = ImageRef(1,0);
+			direction = ImageRef(0,1);
 		} else if (dy > 0.4142*dx){
 			direction = ImageRef(1,1);
 		} else if (dy > -0.4142*dx) {
@@ -78,7 +78,7 @@ void nonmax(const Image<float>& dx_in, const Image<float>& dy_in, const Image<fl
 		} else if (0.4142*dy > -dx) {
 			direction = ImageRef(1,-1);
 		} else {
-			direction = ImageRef(1,0);
+			direction = ImageRef(0,1);
 		}
 		if(mag > magnitude_in[scan+direction] && mag > magnitude_in[scan-direction]){
 			edgels.push_back(scan);
@@ -111,7 +111,7 @@ int main()
 {
 	try{
 		//LOAD IMAGE
-		string img_name("flower");
+		string img_name("frog");
 		Image<Rgb<byte> > im;
 		im = img_load(img_name+".jpg");
 		ImageRef size = im.size();
@@ -133,14 +133,14 @@ int main()
 		gradient_magnitude(dx,dy,magnitude);
 
 		//NON MAXIMA SUPPRESSION AND THRESHOLDING
-		float threshold = 0.0002;
+		float threshold = 0.0001;
 		vector<ImageRef> edgels;
 		vector<ImageRef> directions;
 		nonmax(dx, dy, magnitude, edgels, directions, threshold);
 
 		//GET COLOUR PROFILES
 		vector<vector<Rgb<byte> > > colour_profiles;
-		get_colour_profile(edgels,directions,in, colour_profiles, 21);
+		get_colour_profile(edgels,directions,im, colour_profiles, 21);
 
 		//DRAW IMAGE OF EDGES
 		Image<byte> output(size);
