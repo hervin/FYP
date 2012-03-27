@@ -4,13 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/FYP.cpp 
+../src/FYP.cpp \
+../src/kmeans_test.cpp 
 
 OBJS += \
-./src/FYP.o 
+./src/FYP.o \
+./src/kmeans_test.o 
 
 CPP_DEPS += \
-./src/FYP.d 
+./src/FYP.d \
+./src/kmeans_test.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
