@@ -2,7 +2,9 @@
 <workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="24">
-<fastViewData fastViewLocation="1024"/>
+<fastViewData fastViewLocation="1024">
+<orientation position="512" view="org.eclipse.ui.views.ProblemView"/>
+</fastViewData>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
@@ -35,25 +37,26 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
+<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="FYP.cpp" partName="FYP.cpp" path="/home/hannah/FYP/FYP/src/FYP.cpp" title="FYP.cpp" tooltip="FYP/src/FYP.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/FYP.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="19" selectionOffset="565" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5238" selectionTopPixel="3034"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="RgbProfile.h" partName="RgbProfile.h" path="/home/hannah/FYP/FYP/src/RgbProfile.h" title="RgbProfile.h" tooltip="FYP/src/RgbProfile.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/RgbProfile.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="323" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="547" selectionTopPixel="418"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="kmeans.h" partName="kmeans.h" path="/home/hannah/FYP/FYP/src/kmeans.h" title="kmeans.h" tooltip="FYP/src/kmeans.h" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="kmeans.h" partName="kmeans.h" path="/home/hannah/FYP/FYP/src/kmeans.h" title="kmeans.h" tooltip="FYP/src/kmeans.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/kmeans.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1988" selectionTopPixel="1402"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1952" selectionTopPixel="1174"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="kmeans_test.cpp" partName="kmeans_test.cpp" path="/home/hannah/FYP/FYP/src/kmeans_test.cpp" title="kmeans_test.cpp" tooltip="FYP/src/kmeans_test.cpp" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="kmeans_test.cpp" partName="kmeans_test.cpp" path="/home/hannah/FYP/FYP/src/kmeans_test.cpp" title="kmeans_test.cpp" tooltip="FYP/src/kmeans_test.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/kmeans_test.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="213" selectionTopPixel="60"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="763" selectionTopPixel="263"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="allocator.h" partName="allocator.h" title="allocator.h" tooltip="/usr/include/c++/4.6/bits/allocator.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/usr/include/c++/4.6/bits/allocator.h"/>
@@ -62,6 +65,10 @@
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="stl_vector.h" partName="stl_vector.h" title="stl_vector.h" tooltip="/usr/include/c++/4.6/bits/stl_vector.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/usr/include/c++/4.6/bits/stl_vector.h"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="23933" selectionTopPixel="11747"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="boosttest.cpp" partName="boosttest.cpp" path="/home/hannah/FYP/FYP/src/boosttest.cpp" title="boosttest.cpp" tooltip="FYP/src/boosttest.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/boosttest.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="486" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -93,20 +100,19 @@
 <viewState/>
 </view>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" CommonNavigator.LINKING_ENABLED.delayed="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+<viewState CommonNavigator.LINKING_ENABLED="0" CommonNavigator.LINKING_ENABLED.delayed="0" currentWorkingSetName="Aggregate for window 1331849711357" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
 <viewState/>
 </view>
 <view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
-<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.pathField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Infos"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="558" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="726"/>
+<columnWidths org.eclipse.ui.ide.locationField="431" org.eclipse.ui.ide.markerType="166" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="1081"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -119,9 +125,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1331849711357">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
 <child filterId="org.eclipse.pde.ui.ExternalPluginLibrariesFilter1" isEnabled="true"/>
@@ -155,7 +159,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -215,52 +219,39 @@
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="left">
-<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="left">&#x0A;<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="left">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.69777775" ratioLeft="471" ratioRight="204" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<info folder="true" part="bottom" ratio="0.69777775" ratioLeft="471" ratioRight="204" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="right" ratio="0.74934036" ratioLeft="568" ratioRight="190" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="right" ratio="0.74934036" ratioLeft="568" ratioRight="190" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -320,29 +311,20 @@
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7492625" ratioLeft="508" ratioRight="170" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7492625" ratioLeft="508" ratioRight="170" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.cdt.debug.ui.executablesView" label="Executables"/>
@@ -352,8 +334,7 @@
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -361,27 +342,21 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.4488189" ratioLeft="228" ratioRight="280" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="636" ratioRight="636" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="636" ratioRight="636" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.ModuleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -439,14 +414,23 @@
 <perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
-<view id="org.eclipse.ui.views.ProblemView"/>
-<view id="org.eclipse.ui.views.TaskList"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.ui.views.PropertySheet"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.eclipse.cdt.make.ui.views.MakeView"/>
-<fastViewBars/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="131072" id="topRight" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="bottom" orientation="256" selectedTabId="" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.TaskList" ratio="0.3"/>
+<view id="org.eclipse.ui.views.PropertySheet" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
@@ -468,24 +452,24 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="318" ratioRight="954" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.7492625" ratioLeft="508" ratioRight="170" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-</presentation>
+<info folder="true" part="bottom" ratio="0.7140741" ratioLeft="482" ratioRight="193" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="topRight" ratio="0.7494759" ratioLeft="715" ratioRight="239" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Target"/>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.make.ui.views.MakeView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@48e0f841" ratio="0.7492625" ratioLeft="508" ratioRight="170" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -499,161 +483,164 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/FYP.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/kmeans.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/RgbProfile.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/FYP.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/RgbProfile.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/FYP.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/boosttest.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/FYP.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/kmeans_test.cpp"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/usr/include/c++/4.6/bits/allocator.h"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/usr/include/c++/4.6/bits/stl_vector.h"/>
 </editors>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1964" y="0"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="837" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="646" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="2131" y="0"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="644" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1973" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="650" y="22"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1737" y="21"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="740" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="175" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="650" y="22"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="988" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="735" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="2471" y="20"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="707" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1784" y="0"/>
 </item>
-<item historyLabel="FYP.cpp" index="0">
-<position info="not_deleted" x="2" y="4054"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1973" y="0"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="707" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1963" y="0"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="408" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1871" y="55"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="408" y="0"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="988" y="0"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="412" y="25"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="1041" y="0"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="408" y="0"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="1201" y="44"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="467" y="38"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="2302" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="591" y="22"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="2717" y="24"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="408" y="0"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="2674" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="591" y="22"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="2" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="316" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1871" y="55"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="283" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="401" y="0"/>
 </item>
-<item historyLabel="allocator.h" index="3">
-<position info="not_deleted" x="3363" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="401" y="0"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="410" y="0"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="585" y="94"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1005" y="0"/>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="2895" y="38"/>
 </item>
-<item historyLabel="stl_vector.h" index="4">
-<position info="not_deleted" x="21883" y="0"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="141" y="20"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1154" y="0"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="181" y="0"/>
 </item>
-<item historyLabel="stl_vector.h" index="4">
-<position info="not_deleted" x="23933" y="0"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="682" y="72"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1706" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1932" y="41"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="214" y="0"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="878" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1358" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1932" y="41"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="214" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1971" y="0"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="693" y="0"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="830" y="0"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="690" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1782" y="0"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="213" y="0"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="836" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="316" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1674" y="0"/>
 </item>
-<item historyLabel="FYP.cpp" index="0">
-<position info="not_deleted" x="565" y="19"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="836" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="14" y="0"/>
+<item historyLabel="RgbProfile.h" index="1">
+<position info="not_deleted" x="547" y="0"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="213" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1674" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="14" y="0"/>
+<item historyLabel="RgbProfile.h" index="3">
+<position info="not_deleted" x="547" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="316" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1556" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="493" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1782" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1220" y="0"/>
+<item historyLabel="FYP.cpp" index="4">
+<position info="not_deleted" x="2895" y="38"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1197" y="23"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1951" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position/>
+<item historyLabel="boosttest.cpp" index="5">
+<position info="not_deleted" x="2" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position/>
+<item historyLabel="FYP.cpp" index="6">
+<position info="not_deleted" x="5238" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="771" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="2004" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1086" y="0"/>
+<item historyLabel="kmeans_test.cpp" index="7">
+<position info="not_deleted" x="82" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1125" y="0"/>
+<item historyLabel="FYP.cpp" index="6">
+<position info="not_deleted" x="5238" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="2230" y="0"/>
+<item historyLabel="kmeans.h" index="0">
+<position info="not_deleted" x="1952" y="0"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="2">
-<position info="not_deleted" x="213" y="0"/>
+<item historyLabel="boosttest.cpp" index="5">
+<position info="not_deleted" x="486" y="0"/>
 </item>
-<item active="true" historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="2230" y="0"/>
+<item active="true" historyLabel="kmeans_test.cpp" index="7">
+<position info="not_deleted" x="79" y="2"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -662,7 +649,11 @@
 <actionBarAdvisor/>
 <trimLayout>
 <trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
+<trimItem IMemento.internal.id="topLeft"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="bottom"/>
+<trimItem IMemento.internal.id="topRight"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -671,10 +662,14 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@48e0f841"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="boosttest.cpp" tooltip="FYP/src/boosttest.cpp">
+<persistable path="/FYP/src/boosttest.cpp"/>
+</file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stl_vector.h" tooltip="/usr/include/c++/4.6/bits/stl_vector.h">
 <persistable uri="file:/usr/include/c++/4.6/bits/stl_vector.h"/>
 </file>

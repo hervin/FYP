@@ -1,4 +1,4 @@
-/*//============================================================================
+//============================================================================
 // Name        : CannyEdgeDetector.cpp
 // Author      : Hannah Ervin
 // Version     :
@@ -16,6 +16,9 @@
 #include <cmath>
 #include <iostream>
 #include <vector>
+#include "RgbProfile.h"
+#include "kmeans.h"
+#include <boost/program_options.hpp>
 
 
 using namespace std;
@@ -80,11 +83,17 @@ void nonmax(const Image<float>& dx_in, const Image<float>& dy_in, const Image<fl
 		} else {
 			direction = ImageRef(0,1);
 		}
+
+		// if we're pointing in opposite direction to dx dy, then flip
+		if(direction.x*dx + direction.y*dy < 0){
+			direction.x*=-1;
+			direction.y*=-1;
+		}
+
 		if(mag > magnitude_in[scan+direction] && mag > magnitude_in[scan-direction]){
 			edgels.push_back(scan);
 			directions.push_back(direction);
 		}
-
 	}while(scan.next(border,size-border));
 
 }
@@ -94,16 +103,49 @@ void draw_edgels(const vector<ImageRef>& edgels, Image<byte> out){
 		out[edgels[i]] = 255;
 	}
 }
-
-void get_colour_profile(const vector<ImageRef>& edgels_in, const vector<ImageRef>& dir_in, const Image<Rgb<byte> > in, vector<vector<Rgb<byte> > > profile_out, int profile_length){
-	for(int i = 0; i < edgels_in.size(); i++){
-			vector<Rgb<byte> > temp;
-			temp.resize(profile_length);
-			for( int j = -((profile_length-1))/2; j <= ((profile_length-1)/2); j++){
-				temp.push_back(in[edgels_in[i]+j*dir_in[i]]);
-			}
-			profile_out.push_back(temp);
+void draw_coloured_edgels(const vector<ImageRef>& edgels, const kmeans<RgbProfile>& clusters, Image<Rgb<byte> >& out){
+	for(int i = 0; i < edgels.size(); i++){
+		int cluster = clusters.get_cluster(i);
+		switch(cluster){
+		case 0:
+			out[edgels[i]] = Rgb<byte>(0,0,255);
+			break;
+		case 1:
+			out[edgels[i]] =  Rgb<byte>(0,255,0);
+			break;
+		case 2:
+			out[edgels[i]] = Rgb<byte>(255,0,0);
+			break;
+		case 3:
+			out[edgels[i]] =  Rgb<byte>(0,100,100);
+			break;
+		case 4:
+			out[edgels[i]] =  Rgb<byte>(100,100,0);
+			break;
+		case 5:
+			out[edgels[i]] = Rgb<byte>(100,0,100);
+			break;
+		case 6:
+			out[edgels[i]] = Rgb<byte>(100,100,100);
+			break;
+		default:
+			out[edgels[i]] = Rgb<byte>(255,255,255);
 		}
+	}
+}
+
+void get_colour_profile(const vector<ImageRef>& edgels_in,
+				const vector<ImageRef>& dir_in,
+				const Image<Rgb<byte> > in,
+				vector<RgbProfile >& profile_out,
+				int profile_length){
+
+	cerr << edgels_in.size() << endl;
+	for(unsigned int i = 0; i < edgels_in.size(); i++){
+		RgbProfile output(profile_length);
+		output.build(edgels_in[i],dir_in[i],in,profile_length);
+		profile_out.push_back(output);
+	}
 }
 
 
@@ -111,7 +153,7 @@ int main()
 {
 	try{
 		//LOAD IMAGE
-		string img_name("frog");
+		string img_name("test1");
 		Image<Rgb<byte> > im;
 		im = img_load(img_name+".jpg");
 		ImageRef size = im.size();
@@ -138,14 +180,31 @@ int main()
 		vector<ImageRef> directions;
 		nonmax(dx, dy, magnitude, edgels, directions, threshold);
 
+		cerr << "edgels and directions computed" << endl;
+
 		//GET COLOUR PROFILES
-		vector<vector<Rgb<byte> > > colour_profiles;
+		vector<RgbProfile > colour_profiles;
 		get_colour_profile(edgels,directions,im, colour_profiles, 21);
 
 		//DRAW IMAGE OF EDGES
-		Image<byte> output(size);
+		Image<byte> output(size,(byte)0);
 		draw_edgels(edgels, output);
 		img_save(output, img_name+"out.jpg");
+
+		cerr << "colour profiles created" << endl;
+
+		//CLUSTER EDGES
+		int k = 3;
+		kmeans<RgbProfile> edgel_clusterer(k);
+		edgel_clusterer.cluster(colour_profiles,k);
+
+		cerr << "colour profiles clustered" << endl;
+
+		//SHOW CLUSTERS
+		Rgb<byte> black(0,0,0);
+		Image<Rgb<byte> > coloured_edges(size,black);
+		draw_coloured_edgels(edgels,edgel_clusterer, coloured_edges);
+		img_save(coloured_edges, img_name+"_colourededges.jpg");
 
 	}
 	catch(Exceptions::All error){
@@ -154,4 +213,5 @@ int main()
 
 	return 0;
 
-}*/
+}
+

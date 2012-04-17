@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -lcvd -lGL
+LIBS := -lcvd -lboost_program_options -lGL
 

@@ -5,14 +5,17 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../src/FYP.cpp \
+../src/boosttest.cpp \
 ../src/kmeans_test.cpp 
 
 OBJS += \
 ./src/FYP.o \
+./src/boosttest.o \
 ./src/kmeans_test.o 
 
 CPP_DEPS += \
 ./src/FYP.d \
+./src/boosttest.d \
 ./src/kmeans_test.d 
 
 
