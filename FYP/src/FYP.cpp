@@ -54,7 +54,13 @@ void gradient_magnitude(const Image<float>& dx_in, const Image<float>& dy_in, Im
 	}while(scan.next(size));
 }
 
-void nonmax(const Image<float>& dx_in, const Image<float>& dy_in, const Image<float>& magnitude_in, vector<ImageRef>& edgels, vector<ImageRef>& directions, float threshold){
+void nonmax(const Image<float>& dx_in,
+		const Image<float>& dy_in,
+		const Image<float>& magnitude_in,
+		vector<ImageRef>& edgels,
+		vector<ImageRef>& directions,
+		float threshold){
+
 	ImageRef border(1,1);
 	ImageRef scan=border;
 	ImageRef size = dx_in.size();
@@ -85,9 +91,9 @@ void nonmax(const Image<float>& dx_in, const Image<float>& dy_in, const Image<fl
 		}
 
 		// if we're pointing in opposite direction to dx dy, then flip
-		if(direction.x*dx + direction.y*dy < 0){
-			direction.x*=-1;
-			direction.y*=-1;
+		if(direction.x*dx_in[scan] + direction.y*dy_in[scan] < 0){
+		  direction.x*=-1;
+		  direction.y*=-1;
 		}
 
 		if(mag > magnitude_in[scan+direction] && mag > magnitude_in[scan-direction]){
@@ -139,13 +145,15 @@ void get_colour_profile(const vector<ImageRef>& edgels_in,
 				const Image<Rgb<byte> > in,
 				vector<RgbProfile >& profile_out,
 				int profile_length){
-
+	//test image to check correct profiles are being extracted
+	//Image<Rgb<byte> > test(in.size());
 	cerr << edgels_in.size() << endl;
 	for(unsigned int i = 0; i < edgels_in.size(); i++){
 		RgbProfile output(profile_length);
 		output.build(edgels_in[i],dir_in[i],in,profile_length);
 		profile_out.push_back(output);
 	}
+	//img_save(test, "edgetest.jpg");
 }
 
 
@@ -153,7 +161,7 @@ int main()
 {
 	try{
 		//LOAD IMAGE
-		string img_name("test1");
+		string img_name("test3");
 		Image<Rgb<byte> > im;
 		im = img_load(img_name+".jpg");
 		ImageRef size = im.size();
@@ -175,7 +183,7 @@ int main()
 		gradient_magnitude(dx,dy,magnitude);
 
 		//NON MAXIMA SUPPRESSION AND THRESHOLDING
-		float threshold = 0.0001;
+		float threshold = 0.00001;
 		vector<ImageRef> edgels;
 		vector<ImageRef> directions;
 		nonmax(dx, dy, magnitude, edgels, directions, threshold);
@@ -194,7 +202,7 @@ int main()
 		cerr << "colour profiles created" << endl;
 
 		//CLUSTER EDGES
-		int k = 3;
+		int k = 6;
 		kmeans<RgbProfile> edgel_clusterer(k);
 		edgel_clusterer.cluster(colour_profiles,k);
 

@@ -2,50 +2,14 @@
 **** Build of configuration Debug for project FYP ****
 
 make all 
-Building file: ../src/FYP.cpp
+Building file: ../src/boosttest.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FYP.d" -MT"src/FYP.d" -o"src/FYP.o" "../src/FYP.cpp"
-In file included from ../src/FYP.cpp:19:0:
-../src/RgbProfile.h: In member function ‘double RgbProfile::sq_mag() const’:
-../src/RgbProfile.h:59:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/RgbProfile.h: In member function ‘RgbProfile RgbProfile::operator+(const RgbProfile&) const’:
-../src/RgbProfile.h:68:3: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/RgbProfile.h:70:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/RgbProfile.h: In member function ‘RgbProfile RgbProfile::operator-(const RgbProfile&) const’:
-../src/RgbProfile.h:79:3: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/RgbProfile.h:81:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/RgbProfile.h: In member function ‘RgbProfile RgbProfile::operator*(const RgbProfile&)’:
-../src/RgbProfile.h:89:4: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/RgbProfile.h:91:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/RgbProfile.h: In member function ‘RgbProfile& RgbProfile::operator+=(const RgbProfile&)’:
-../src/RgbProfile.h:100:3: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/RgbProfile.h:101:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/RgbProfile.h: In member function ‘RgbProfile RgbProfile::operator*(double)’:
-../src/RgbProfile.h:110:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/FYP.cpp: In function ‘void draw_edgels(const std::vector<CVD::ImageRef>&, CVD::Image<unsigned char>)’:
-../src/FYP.cpp:102:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/FYP.cpp: In function ‘void draw_coloured_edgels(const std::vector<CVD::ImageRef>&, const kmeans<RgbProfile>&, CVD::Image<CVD::Rgb<unsigned char> >&)’:
-../src/FYP.cpp:107:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-In file included from ../src/FYP.cpp:20:0:
-../src/kmeans.h: In member function ‘void kmeans<T>::cluster(const std::vector<Precision>&, int) [with T = RgbProfile]’:
-../src/FYP.cpp:199:44:   instantiated from here
-../src/kmeans.h:51:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/kmeans.h: In member function ‘void kmeans<T>::assign_means(const std::vector<Precision>&, int) [with T = RgbProfile]’:
-../src/kmeans.h:49:4:   instantiated from ‘void kmeans<T>::cluster(const std::vector<Precision>&, int) [with T = RgbProfile]’
-../src/FYP.cpp:199:44:   instantiated from here
-../src/kmeans.h:91:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/kmeans.h: In member function ‘void kmeans<T>::update_means(const std::vector<Precision>&, int) [with T = RgbProfile]’:
-../src/kmeans.h:59:4:   instantiated from ‘void kmeans<T>::cluster(const std::vector<Precision>&, int) [with T = RgbProfile]’
-../src/FYP.cpp:199:44:   instantiated from here
-../src/kmeans.h:113:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/kmeans.h: In member function ‘bool kmeans<T>::has_stabilised() [with T = RgbProfile]’:
-../src/kmeans.h:61:4:   instantiated from ‘void kmeans<T>::cluster(const std::vector<Precision>&, int) [with T = RgbProfile]’
-../src/FYP.cpp:199:44:   instantiated from here
-../src/kmeans.h:73:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-Finished building: ../src/FYP.cpp
- 
-Building target: FYP
-Invoking: GCC C++ Linker
-g++  -o"FYP"  ./src/FYP.o ./src/boosttest.o ./src/kmeans_test.o   -lcvd -lboost_program_options -lGL
-Finished building target: FYP
- 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/boosttest.d" -MT"src/boosttest.d" -o"src/boosttest.o" "../src/boosttest.cpp"
+../src/boosttest.cpp: In function ‘int main()’:
+../src/boosttest.cpp:16:55: error: no matching function for call to ‘parse_config_file(const char*&, boost::program_options::options_description&, bool)’
+../src/boosttest.cpp:16:55: note: candidates are:
+/usr/local/include/boost/program_options/parsers.hpp:163:5: note: template<class charT> boost::program_options::basic_parsed_options<charT> boost::program_options::parse_config_file(std::basic_istream<charT>&, const boost::program_options::options_description&, bool)
+/usr/local/include/boost/program_options/parsers.hpp:176:5: note: template<class charT> boost::program_options::basic_parsed_options<charT> boost::program_options::parse_config_file(const char*, const boost::program_options::options_description&, bool)
+../src/boosttest.cpp:19:6: warning: unused variable ‘k’ [-Wunused-variable]
+../src/boosttest.cpp:20:8: warning: unused variable ‘threshold’ [-Wunused-variable]
+make: *** [src/boosttest.o] Error 1

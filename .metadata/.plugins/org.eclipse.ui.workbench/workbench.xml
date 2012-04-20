@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="21" version="2.0">
+<workbench progressCount="28" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="24">
 <fastViewData fastViewLocation="1024">
@@ -36,39 +36,29 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
-<part id="5"/>
-<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="FYP.cpp" partName="FYP.cpp" path="/home/hannah/FYP/FYP/src/FYP.cpp" title="FYP.cpp" tooltip="FYP/src/FYP.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/FYP.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5238" selectionTopPixel="3034"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2422" selectionTopPixel="1323"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="RgbProfile.h" partName="RgbProfile.h" path="/home/hannah/FYP/FYP/src/RgbProfile.h" title="RgbProfile.h" tooltip="FYP/src/RgbProfile.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/RgbProfile.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="547" selectionTopPixel="418"/>
+<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="1032" selectionTopPixel="721"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="kmeans.h" partName="kmeans.h" path="/home/hannah/FYP/FYP/src/kmeans.h" title="kmeans.h" tooltip="FYP/src/kmeans.h" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="kmeans.h" partName="kmeans.h" path="/home/hannah/FYP/FYP/src/kmeans.h" title="kmeans.h" tooltip="FYP/src/kmeans.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/kmeans.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1952" selectionTopPixel="1174"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="535" selectionTopPixel="1385"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="kmeans_test.cpp" partName="kmeans_test.cpp" path="/home/hannah/FYP/FYP/src/kmeans_test.cpp" title="kmeans_test.cpp" tooltip="FYP/src/kmeans_test.cpp" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="kmeans_test.cpp" partName="kmeans_test.cpp" path="/home/hannah/FYP/FYP/src/kmeans_test.cpp" title="kmeans_test.cpp" tooltip="FYP/src/kmeans_test.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/kmeans_test.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="763" selectionTopPixel="263"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="allocator.h" partName="allocator.h" title="allocator.h" tooltip="/usr/include/c++/4.6/bits/allocator.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/usr/include/c++/4.6/bits/allocator.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3363" selectionTopPixel="1734"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stl_vector.h" partName="stl_vector.h" title="stl_vector.h" tooltip="/usr/include/c++/4.6/bits/stl_vector.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/usr/include/c++/4.6/bits/stl_vector.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="23933" selectionTopPixel="11747"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="763" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="boosttest.cpp" partName="boosttest.cpp" path="/home/hannah/FYP/FYP/src/boosttest.cpp" title="boosttest.cpp" tooltip="FYP/src/boosttest.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/boosttest.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="486" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="557" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -109,8 +99,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.pathField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="431" org.eclipse.ui.ide.markerType="166" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="1081"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -159,7 +149,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -416,12 +406,16 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
-<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="131072" id="topRight" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
 <fastViews>
 <view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
 <view id="org.eclipse.cdt.make.ui.views.MakeView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="16384" id="topLeft" orientation="512" selectedTabId="org.eclipse.ui.navigator.ProjectExplorer" style="0">
+<fastViews>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="bottom" orientation="256" selectedTabId="" style="0">
@@ -434,14 +428,12 @@
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.ui.CView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="topLeft">
@@ -483,164 +475,160 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/kmeans.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/RgbProfile.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/FYP.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/RgbProfile.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/FYP.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/boosttest.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/FYP.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/kmeans_test.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/kmeans.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/FYP.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/RgbProfile.h"/>
 </editors>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="837" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="2131" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1973" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1737" y="21"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="175" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="988" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="2471" y="20"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1784" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1973" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1963" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1871" y="55"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="988" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="1041" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="1201" y="44"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="2302" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="2717" y="24"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="2674" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="2" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1871" y="55"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="401" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="401" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="585" y="94"/>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="5599" y="0"/>
 </item>
 <item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="2895" y="38"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="141" y="20"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="181" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="682" y="72"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1932" y="41"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="878" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1932" y="41"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1971" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="830" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1782" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="836" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1674" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="836" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="1">
-<position info="not_deleted" x="547" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1674" y="0"/>
+<position/>
 </item>
 <item historyLabel="RgbProfile.h" index="3">
-<position info="not_deleted" x="547" y="0"/>
+<position info="not_deleted" x="578" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1556" y="0"/>
+<item historyLabel="RgbProfile.h" index="3">
+<position info="not_deleted" x="657" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1782" y="0"/>
+<item historyLabel="RgbProfile.h" index="3">
+<position info="not_deleted" x="757" y="0"/>
 </item>
-<item historyLabel="FYP.cpp" index="4">
-<position info="not_deleted" x="2895" y="38"/>
+<item historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="1542" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1951" y="0"/>
+<item historyLabel="FYP.cpp" index="2">
+<position/>
 </item>
-<item historyLabel="boosttest.cpp" index="5">
-<position info="not_deleted" x="2" y="0"/>
+<item historyLabel="FYP.cpp" index="2">
+<position/>
 </item>
-<item historyLabel="FYP.cpp" index="6">
-<position info="not_deleted" x="5238" y="0"/>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="3764" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="2004" y="0"/>
+<item historyLabel="RgbProfile.h" index="3">
+<position info="not_deleted" x="757" y="0"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="7">
-<position info="not_deleted" x="82" y="0"/>
+<item historyLabel="RgbProfile.h" index="3">
+<position info="not_deleted" x="1220" y="0"/>
 </item>
-<item historyLabel="FYP.cpp" index="6">
-<position info="not_deleted" x="5238" y="0"/>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="3975" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="0">
-<position info="not_deleted" x="1952" y="0"/>
+<item historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="1542" y="0"/>
 </item>
-<item historyLabel="boosttest.cpp" index="5">
-<position info="not_deleted" x="486" y="0"/>
+<item historyLabel="RgbProfile.h" index="3">
+<position info="not_deleted" x="1220" y="0"/>
 </item>
-<item active="true" historyLabel="kmeans_test.cpp" index="7">
-<position info="not_deleted" x="79" y="2"/>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="3975" y="0"/>
+</item>
+<item historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="1542" y="0"/>
+</item>
+<item historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="1643" y="0"/>
+</item>
+<item historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="752" y="0"/>
+</item>
+<item historyLabel="kmeans_test.cpp" index="0">
+<position info="not_deleted" x="763" y="0"/>
+</item>
+<item historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="752" y="0"/>
+</item>
+<item historyLabel="RgbProfile.h" index="3">
+<position info="not_deleted" x="2634" y="0"/>
+</item>
+<item historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="752" y="0"/>
+</item>
+<item historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="940" y="0"/>
+</item>
+<item historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="955" y="0"/>
+</item>
+<item historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="1120" y="0"/>
+</item>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="3975" y="0"/>
+</item>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="2846" y="0"/>
+</item>
+<item historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="1120" y="0"/>
+</item>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="5493" y="0"/>
+</item>
+<item historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="1238" y="0"/>
+</item>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="5493" y="0"/>
+</item>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="2422" y="0"/>
+</item>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="1882" y="71"/>
+</item>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="4926" y="0"/>
+</item>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="4926" y="0"/>
+</item>
+<item historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="1238" y="0"/>
+</item>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="4926" y="0"/>
+</item>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="3738" y="0"/>
+</item>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="3758" y="0"/>
+</item>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="3755" y="0"/>
+</item>
+<item historyLabel="FYP.cpp" index="2">
+<position info="not_deleted" x="2422" y="0"/>
+</item>
+<item historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="535" y="0"/>
+</item>
+<item historyLabel="RgbProfile.h" index="3">
+<position info="not_deleted" x="2634" y="0"/>
+</item>
+<item historyLabel="RgbProfile.h" index="3">
+<position info="not_deleted" x="1140" y="0"/>
+</item>
+<item historyLabel="RgbProfile.h" index="3">
+<position info="not_deleted" x="1215" y="0"/>
+</item>
+<item historyLabel="RgbProfile.h" index="3">
+<position info="not_deleted" x="1102" y="0"/>
+</item>
+<item historyLabel="RgbProfile.h" index="3">
+<position info="not_deleted" x="1105" y="0"/>
+</item>
+<item historyLabel="RgbProfile.h" index="3">
+<position info="not_deleted" x="1189" y="0"/>
+</item>
+<item historyLabel="RgbProfile.h" index="3">
+<position info="not_deleted" x="1032" y="4"/>
+</item>
+<item active="true" historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="535" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -662,7 +650,6 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@48e0f841"/>
 </trimArea>
 </trimLayout>
 </window>
