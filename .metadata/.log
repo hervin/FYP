@@ -1772,3 +1772,12 @@ org.eclipse.core.internal.resources.ResourceException: Resource is out of sync w
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1384)
 !SUBENTRY 1 org.eclipse.core.resources 4 274 2012-05-05 20:36:08.224
 !MESSAGE Resource is out of sync with the file system: '/FYP/SAM_1468.JPG'.
+!SESSION 2012-05-06 20:29:39.864 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-05-06 20:29:47.081
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

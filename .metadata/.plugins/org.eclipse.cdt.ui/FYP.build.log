@@ -39,7 +39,9 @@ In file included from ../src/CommandLineInterface.cpp:20:0:
 ../src/CommandLineInterface.cpp:126:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 ../src/CommandLineInterface.cpp: In function ‘int run_video()’:
 ../src/CommandLineInterface.cpp:153:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/CommandLineInterface.cpp:191:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/CommandLineInterface.cpp:206:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/CommandLineInterface.cpp:209:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/CommandLineInterface.cpp:220:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 In file included from ../src/CommandLineInterface.cpp:19:0:
 ../src/kmeans.h: In member function ‘void kmeans<T>::cluster(const std::vector<Precision>&, int) [with T = RgbProfile]’:
 ../src/CommandLineInterface.cpp:173:59:   instantiated from here
