@@ -21,6 +21,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -35,30 +36,25 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="FYP.cpp" partName="FYP.cpp" path="/home/hannah/FYP/FYP/src/FYP.cpp" title="FYP.cpp" tooltip="FYP/src/FYP.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/FYP.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2422" selectionTopPixel="1323"/>
-</editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="RgbProfile.h" partName="RgbProfile.h" path="/home/hannah/FYP/FYP/src/RgbProfile.h" title="RgbProfile.h" tooltip="FYP/src/RgbProfile.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/RgbProfile.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="1032" selectionTopPixel="721"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1599" selectionTopPixel="1343"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="kmeans.h" partName="kmeans.h" path="/home/hannah/FYP/FYP/src/kmeans.h" title="kmeans.h" tooltip="FYP/src/kmeans.h" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="kmeans.h" partName="kmeans.h" path="/home/hannah/FYP/FYP/src/kmeans.h" title="kmeans.h" tooltip="FYP/src/kmeans.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/kmeans.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="535" selectionTopPixel="1385"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="674" selectionTopPixel="992"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="kmeans_test.cpp" partName="kmeans_test.cpp" path="/home/hannah/FYP/FYP/src/kmeans_test.cpp" title="kmeans_test.cpp" tooltip="FYP/src/kmeans_test.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/kmeans_test.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="763" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="EdgeDetection.h" partName="EdgeDetection.h" path="/home/hannah/FYP/FYP/src/EdgeDetection.h" title="EdgeDetection.h" tooltip="FYP/src/EdgeDetection.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/EdgeDetection.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3763" selectionTopPixel="2074"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="boosttest.cpp" partName="boosttest.cpp" path="/home/hannah/FYP/FYP/src/boosttest.cpp" title="boosttest.cpp" tooltip="FYP/src/boosttest.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/boosttest.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="557" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="CommandLineInterface.cpp" partName="CommandLineInterface.cpp" path="/home/hannah/FYP/FYP/src/CommandLineInterface.cpp" title="CommandLineInterface.cpp" tooltip="FYP/src/CommandLineInterface.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FYP/src/CommandLineInterface.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="621" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -70,7 +66,7 @@
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
-<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="353" org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="209" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.priorityField="19" org.eclipse.ui.ide.resourceField="108"/>
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="353" org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="462" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.priorityField="19" org.eclipse.ui.ide.resourceField="108"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
@@ -99,8 +95,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.pathField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="431" org.eclipse.ui.ide.markerType="166" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="1081"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -404,8 +400,9 @@
 <perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="131072" id="topRight" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
 <fastViews>
@@ -413,12 +410,7 @@
 <view id="org.eclipse.cdt.make.ui.views.MakeView" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
-<fastViewBar fastViewLocation="16384" id="topLeft" orientation="512" selectedTabId="org.eclipse.ui.navigator.ProjectExplorer" style="0">
-<fastViews>
-<view id="org.eclipse.ui.navigator.ProjectExplorer" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="131072" id="bottom" orientation="256" selectedTabId="" style="0">
+<fastViewBar fastViewLocation="131072" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.views.TaskList" style="0">
 <fastViews>
 <view id="org.eclipse.ui.views.TaskList" ratio="0.3"/>
 <view id="org.eclipse.ui.views.PropertySheet" ratio="0.3"/>
@@ -428,12 +420,14 @@
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.cdt.ui.CView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="topLeft">
@@ -458,10 +452,10 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@48e0f841" ratio="0.7492625" ratioLeft="508" ratioRight="170" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@48e0f841" ratio="0.66074073" ratioLeft="446" ratioRight="229" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -475,160 +469,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/kmeans_test.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/CommandLineInterface.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/kmeans.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/FYP.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/RgbProfile.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/EdgeDetection.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/FYP/SAM_1468.JPG"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FYP/src/EdgeDetection.h"/>
 </editors>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="5599" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="5628" y="0"/>
 </item>
-<item historyLabel="FYP.cpp" index="2">
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="5166" y="0"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="5115" y="0"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="5134" y="0"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="5166" y="0"/>
+</item>
+<item historyLabel="EdgeDetection.h" index="2">
+<position info="not_deleted" x="162" y="0"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="5166" y="0"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="6512" y="0"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="7507" y="0"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="7501" y="0"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="2979" y="0"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="2883" y="0"/>
+</item>
+<item historyLabel="kmeans.h" index="1">
+<position info="not_deleted" x="674" y="0"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="3621" y="0"/>
+</item>
+<item historyLabel="EdgeDetection.h" index="2">
+<position info="not_deleted" x="106" y="0"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="3003" y="63"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="921" y="0"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="948" y="0"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="1060" y="0"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="876" y="110"/>
+</item>
+<item historyLabel="CommandLineInterface.cpp" index="0">
 <position/>
 </item>
-<item historyLabel="RgbProfile.h" index="3">
-<position info="not_deleted" x="578" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="3">
-<position info="not_deleted" x="657" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="3">
-<position info="not_deleted" x="757" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1542" y="0"/>
-</item>
-<item historyLabel="FYP.cpp" index="2">
+<item historyLabel="CommandLineInterface.cpp" index="0">
 <position/>
 </item>
-<item historyLabel="FYP.cpp" index="2">
-<position/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="7938" y="0"/>
 </item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="3764" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="6283" y="0"/>
 </item>
-<item historyLabel="RgbProfile.h" index="3">
-<position info="not_deleted" x="757" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="6876" y="17"/>
 </item>
-<item historyLabel="RgbProfile.h" index="3">
-<position info="not_deleted" x="1220" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="8035" y="0"/>
 </item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="3975" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="6677" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1542" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="4844" y="0"/>
 </item>
-<item historyLabel="RgbProfile.h" index="3">
-<position info="not_deleted" x="1220" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="7515" y="0"/>
 </item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="3975" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="7602" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1542" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="7398" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1643" y="0"/>
+<item historyLabel="SAM_1468.JPG" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="752" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="7398" y="0"/>
 </item>
-<item historyLabel="kmeans_test.cpp" index="0">
-<position info="not_deleted" x="763" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="4948" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="752" y="0"/>
+<item historyLabel="EdgeDetection.h" index="4">
+<position info="not_deleted" x="106" y="0"/>
 </item>
-<item historyLabel="RgbProfile.h" index="3">
-<position info="not_deleted" x="2634" y="0"/>
+<item historyLabel="EdgeDetection.h" index="4">
+<position info="not_deleted" x="3513" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="752" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="4948" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="940" y="0"/>
+<item historyLabel="EdgeDetection.h" index="4">
+<position info="not_deleted" x="3513" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="955" y="0"/>
+<item historyLabel="EdgeDetection.h" index="4">
+<position info="not_deleted" x="3572" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1120" y="0"/>
+<item historyLabel="EdgeDetection.h" index="4">
+<position info="not_deleted" x="3815" y="0"/>
 </item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="3975" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="4948" y="0"/>
 </item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="2846" y="0"/>
+<item historyLabel="EdgeDetection.h" index="4">
+<position info="not_deleted" x="3763" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1120" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="5243" y="200"/>
 </item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="5493" y="0"/>
+<item historyLabel="EdgeDetection.h" index="4">
+<position info="not_deleted" x="3716" y="0"/>
 </item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1238" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="637" y="234"/>
 </item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="5493" y="0"/>
+<item historyLabel="EdgeDetection.h" index="4">
+<position info="not_deleted" x="3716" y="0"/>
 </item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="2422" y="0"/>
+<item historyLabel="EdgeDetection.h" index="4">
+<position info="not_deleted" x="405" y="0"/>
 </item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="1882" y="71"/>
+<item historyLabel="EdgeDetection.h" index="4">
+<position info="not_deleted" x="3763" y="0"/>
 </item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="4926" y="0"/>
+<item historyLabel="CommandLineInterface.cpp" index="0">
+<position info="not_deleted" x="621" y="0"/>
 </item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="4926" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="1238" y="0"/>
-</item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="4926" y="0"/>
-</item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="3738" y="0"/>
-</item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="3758" y="0"/>
-</item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="3755" y="0"/>
-</item>
-<item historyLabel="FYP.cpp" index="2">
-<position info="not_deleted" x="2422" y="0"/>
-</item>
-<item historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="535" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="3">
-<position info="not_deleted" x="2634" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="3">
-<position info="not_deleted" x="1140" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="3">
-<position info="not_deleted" x="1215" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="3">
-<position info="not_deleted" x="1102" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="3">
-<position info="not_deleted" x="1105" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="3">
-<position info="not_deleted" x="1189" y="0"/>
-</item>
-<item historyLabel="RgbProfile.h" index="3">
-<position info="not_deleted" x="1032" y="4"/>
-</item>
-<item active="true" historyLabel="kmeans.h" index="1">
-<position info="not_deleted" x="535" y="0"/>
+<item active="true" historyLabel="EdgeDetection.h" index="4">
+<position info="not_deleted" x="3763" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -636,9 +631,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="topLeft"/>
-</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="bottom"/>
 <trimItem IMemento.internal.id="topRight"/>
@@ -654,6 +646,21 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CommandLineInterface.cpp" tooltip="FYP/src/CommandLineInterface.cpp">
+<persistable path="/FYP/src/CommandLineInterface.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="EdgeDetection.h" tooltip="FYP/src/EdgeDetection.h">
+<persistable path="/FYP/src/EdgeDetection.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FYPMain.cpp" tooltip="FYP/src/FYPMain.cpp">
+<persistable path="/FYP/src/FYPMain.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="EdgeDetection.cpp" tooltip="FYP/src/EdgeDetection.cpp">
+<persistable path="/FYP/src/EdgeDetection.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="test2.cpp" tooltip="/home/hannah/workspace/basicCameraAccess/test2/src/test2.cpp">
+<persistable uri="file:/home/hannah/workspace/basicCameraAccess/test2/src/test2.cpp"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="boosttest.cpp" tooltip="FYP/src/boosttest.cpp">
 <persistable path="/FYP/src/boosttest.cpp"/>
 </file>

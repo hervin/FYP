@@ -1,3 +1,4 @@
+/*
 //============================================================================
 // Name        : CannyEdgeDetector.cpp
 // Author      : Hannah Ervin
@@ -20,7 +21,6 @@
 #include "kmeans.h"
 #include <boost/program_options.hpp>
 
-
 using namespace std;
 using namespace CVD;
 using namespace TooN;
@@ -30,7 +30,6 @@ void display_image(Image <byte>& im){
 	glDrawPixels(im);
 	glFlush();
 }
-
 
 void gradient(const Image<float>& in, Image<float>& dx_out, Image<float>& dy_out){
 	ImageRef size = in.size();
@@ -104,6 +103,8 @@ void nonmax(const Image<float>& dx_in,
 
 }
 
+
+
 void draw_edgels(const vector<ImageRef>& edgels, Image<byte> out){
 	for(int i = 0; i < edgels.size(); i++){
 		out[edgels[i]] = 255;
@@ -155,7 +156,28 @@ void get_colour_profile(const vector<ImageRef>& edgels_in,
 	}
 	//img_save(test, "edgetest.jpg");
 }
+void detect_edges(Image<Rgb<byte> >& im,  int threshold){
+	ImageRef size = im.size();
+	Image<float> gray(size);
+	convert_image(im,gray);
 
+	//BLUR
+	Image<float> blurred(size);
+	convolveGaussian(gray, blurred, 5, 1.0);
+	img_save(blurred, img_name+"gblur.jpg");
+
+	//COMPUTE IMAGE GRADIENTS
+	Image<float> dx(size);
+	Image<float> dy(size);
+	gradient(blurred,dx,dy);
+
+	//COMPUTE GRADIENT MAGNITUDES
+	Image<float> magnitude(size);
+	gradient_magnitude(dx,dy,magnitude);
+
+	//NON MAXIMA SUPPRESSION AND THRESHOLDING
+	nonmax(dx, dy, magnitude, edgels, directions, threshold);
+}
 
 int main()
 {
@@ -164,35 +186,38 @@ int main()
 		string img_name("test3");
 		Image<Rgb<byte> > im;
 		im = img_load(img_name+".jpg");
-		ImageRef size = im.size();
-		Image<float> gray(size);
-		convert_image(im,gray);
+		//ImageRef size = im.size();
+		//Image<float> gray(size);
+		//convert_image(im,gray);
 
 		//BLUR
-		Image<float> blurred(size);
-		convolveGaussian(gray, blurred, 5, 1.0);
-		img_save(blurred, img_name+"gblur.jpg");
+		//Image<float> blurred(size);
+		//convolveGaussian(gray, blurred, 5, 1.0);
+		//img_save(blurred, img_name+"gblur.jpg");
 
 		//COMPUTE IMAGE GRADIENTS
-		Image<float> dx(size);
-		Image<float> dy(size);
-		gradient(blurred,dx,dy);
+		//Image<float> dx(size);
+		//Image<float> dy(size);
+		//gradient(blurred,dx,dy);
 
 		//COMPUTE GRADIENT MAGNITUDES
-		Image<float> magnitude(size);
-		gradient_magnitude(dx,dy,magnitude);
+		//Image<float> magnitude(size);
+		//gradient_magnitude(dx,dy,magnitude);
 
 		//NON MAXIMA SUPPRESSION AND THRESHOLDING
 		float threshold = 0.00001;
-		vector<ImageRef> edgels;
-		vector<ImageRef> directions;
-		nonmax(dx, dy, magnitude, edgels, directions, threshold);
+		//vector<ImageRef> edgels;
+		//vector<ImageRef> directions;
+		//nonmax(dx, dy, magnitude, edgels, directions, threshold);
 
-		cerr << "edgels and directions computed" << endl;
+		//cerr << "edgels and directions computed" << endl;
 
 		//GET COLOUR PROFILES
 		vector<RgbProfile > colour_profiles;
 		get_colour_profile(edgels,directions,im, colour_profiles, 21);
+		for(int i = 0; i< colour_profiles.size();i++){
+			colour_profiles[i].normalise();
+		}
 
 		//DRAW IMAGE OF EDGES
 		Image<byte> output(size,(byte)0);
@@ -223,3 +248,4 @@ int main()
 
 }
 
+*/

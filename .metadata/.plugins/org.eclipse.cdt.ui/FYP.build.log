@@ -2,14 +2,64 @@
 **** Build of configuration Debug for project FYP ****
 
 make all 
-Building file: ../src/boosttest.cpp
+Building file: ../src/CommandLineInterface.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/boosttest.d" -MT"src/boosttest.d" -o"src/boosttest.o" "../src/boosttest.cpp"
-../src/boosttest.cpp: In function ‘int main()’:
-../src/boosttest.cpp:16:55: error: no matching function for call to ‘parse_config_file(const char*&, boost::program_options::options_description&, bool)’
-../src/boosttest.cpp:16:55: note: candidates are:
-/usr/local/include/boost/program_options/parsers.hpp:163:5: note: template<class charT> boost::program_options::basic_parsed_options<charT> boost::program_options::parse_config_file(std::basic_istream<charT>&, const boost::program_options::options_description&, bool)
-/usr/local/include/boost/program_options/parsers.hpp:176:5: note: template<class charT> boost::program_options::basic_parsed_options<charT> boost::program_options::parse_config_file(const char*, const boost::program_options::options_description&, bool)
-../src/boosttest.cpp:19:6: warning: unused variable ‘k’ [-Wunused-variable]
-../src/boosttest.cpp:20:8: warning: unused variable ‘threshold’ [-Wunused-variable]
-make: *** [src/boosttest.o] Error 1
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CommandLineInterface.d" -MT"src/CommandLineInterface.d" -o"src/CommandLineInterface.o" "../src/CommandLineInterface.cpp"
+In file included from ../src/CommandLineInterface.cpp:18:0:
+../src/RgbProfile.h: In member function ‘void RgbProfile::normalise()’:
+../src/RgbProfile.h:77:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/RgbProfile.h:85:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/RgbProfile.h: In member function ‘double RgbProfile::sq_mag() const’:
+../src/RgbProfile.h:95:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/RgbProfile.h: In member function ‘RgbProfile RgbProfile::operator+(const RgbProfile&) const’:
+../src/RgbProfile.h:104:3: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/RgbProfile.h:106:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/RgbProfile.h: In member function ‘RgbProfile RgbProfile::operator-(const RgbProfile&) const’:
+../src/RgbProfile.h:115:3: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/RgbProfile.h:117:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/RgbProfile.h: In member function ‘RgbProfile RgbProfile::operator*(const RgbProfile&)’:
+../src/RgbProfile.h:125:4: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/RgbProfile.h:127:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/RgbProfile.h: In member function ‘RgbProfile& RgbProfile::operator+=(const RgbProfile&)’:
+../src/RgbProfile.h:136:3: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/RgbProfile.h:137:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/RgbProfile.h: In member function ‘RgbProfile RgbProfile::operator*(double)’:
+../src/RgbProfile.h:146:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+In file included from ../src/CommandLineInterface.cpp:20:0:
+../src/EdgeDetection.h: In member function ‘void EdgeDetection::draw_edgels(const std::vector<CVD::ImageRef>&, CVD::Image<unsigned char>&)’:
+../src/EdgeDetection.h:14:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/CommandLineInterface.cpp: In function ‘void draw_edgels(const std::vector<CVD::ImageRef>&, CVD::Image<unsigned char>&)’:
+../src/CommandLineInterface.cpp:33:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/CommandLineInterface.cpp: In function ‘void draw_coloured_edgels(const std::vector<CVD::ImageRef>&, const std::vector<int>&, CVD::Image<CVD::Rgb<unsigned char> >&)’:
+../src/CommandLineInterface.cpp:41:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/CommandLineInterface.cpp: In function ‘void draw_coloured_edgels(const std::vector<CVD::ImageRef>&, const kmeans<RgbProfile>&, CVD::Image<CVD::Rgb<unsigned char> >&)’:
+../src/CommandLineInterface.cpp:71:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/CommandLineInterface.cpp: In function ‘void label_with_previous(std::string)’:
+../src/CommandLineInterface.cpp:123:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/CommandLineInterface.cpp:126:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/CommandLineInterface.cpp: In function ‘int run_video()’:
+../src/CommandLineInterface.cpp:153:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/CommandLineInterface.cpp:191:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+In file included from ../src/CommandLineInterface.cpp:19:0:
+../src/kmeans.h: In member function ‘void kmeans<T>::cluster(const std::vector<Precision>&, int) [with T = RgbProfile]’:
+../src/CommandLineInterface.cpp:173:59:   instantiated from here
+../src/kmeans.h:53:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/kmeans.h: In member function ‘void kmeans<T>::assign_means(const std::vector<Precision>&, int) [with T = RgbProfile]’:
+../src/kmeans.h:51:4:   instantiated from ‘void kmeans<T>::cluster(const std::vector<Precision>&, int) [with T = RgbProfile]’
+../src/CommandLineInterface.cpp:173:59:   instantiated from here
+../src/kmeans.h:94:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/kmeans.h: In member function ‘void kmeans<T>::update_means(const std::vector<Precision>&, int) [with T = RgbProfile]’:
+../src/kmeans.h:58:4:   instantiated from ‘void kmeans<T>::cluster(const std::vector<Precision>&, int) [with T = RgbProfile]’
+../src/CommandLineInterface.cpp:173:59:   instantiated from here
+../src/kmeans.h:116:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/kmeans.h: In member function ‘bool kmeans<T>::has_stabilised() [with T = RgbProfile]’:
+../src/kmeans.h:59:4:   instantiated from ‘void kmeans<T>::cluster(const std::vector<Precision>&, int) [with T = RgbProfile]’
+../src/CommandLineInterface.cpp:173:59:   instantiated from here
+../src/kmeans.h:73:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../src/CommandLineInterface.cpp
+ 
+Building target: FYP
+Invoking: GCC C++ Linker
+g++  -o"FYP"  ./src/CommandLineInterface.o ./src/EdgeDetection.o ./src/FYP.o ./src/FYPMain.o ./src/boosttest.o ./src/kmeans_test.o   -lcvd -lboost_program_options -lGL
+Finished building target: FYP
+ 
